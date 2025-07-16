@@ -65,3 +65,10 @@ if uploaded_file is not None:
     for i, val in enumerate(predicted):
         status = "Present" if val == 1 else "Absent"
         st.write(f"- {disease_labels[i]}: {status}")
+
+        st.markdown("---")
+st.markdown(
+    "<div style='text-align: center; font-size: 16px; color: gray;'>© Spyros Georgiou 2025</div>",
+    unsafe_allow_html=True
+)
+
